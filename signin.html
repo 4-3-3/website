@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4-3-3 - Portali Informativ per Futboll</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<link rel="icon" type="image/png" href="img/pg.png">
+</head>
+
+<style type="text/css">
+	
+	.ul li {
+		color: #3d80ed;
+	}
+
+.kerkesat2 {
+background-image: url(img/water.jpg);
+}
+#login_form {
+width:500px;
+display:block;
+margin:0 auto;
+}
+#email {
+	color: black;
+}
+.kontakto1 {
+	margin-left: 40px;
+}
+
+#h3 {
+	text-align: center;
+	color: #3d80ed;
+}
+#kyçu {
+	font-size: 23px;
+	font-weight: bold;
+	color: lightgreen;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+	box-sizing: border-box; 
+}
+.sub{
+	width:100%;
+	color:white;
+	background-color: #3d80ed;
+	padding:12px 20px;
+	margin:10px 0;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+}
+.sub:hover{
+	opacity:0.8;
+}
+
+#cancel_btn{
+	background-color:#f44336;
+	width:150px;
+	padding:12px 20px;
+	margin:10px 0;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	border:none;
+}
+
+#cancel_btn:hover{
+opacity:0.6;
+cursor:pointer;
+}
+
+#pastro_btn{
+	background-color:#3d80ed;
+	width:150px;
+	padding:12px 20px;
+	margin:10px 0;
+	float:right;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	border:none;
+}
+
+#pastro_btn:hover{
+	cursor:pointer;
+	opacity:0.7;
+}
+
+label{
+	color:#00083A;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+body{
+background-image:url("img/water.jpg");
+background-size:cover;
+}
+</style>
+<script type="text/javascript">
+function valido(){
+var pass = document.myForm.password.value;
+	if(pass.length < 6 ){
+	alert("Password duhet te kete te pakten 6 karaktere!");
+}else{
+window.close(); 
+	}
+</script>
+<div class="top">
+  <div id="topbar" class="hoc clear"> 
+    <div>
+      <ul>
+         <a href="index.html"> <li>&nbsp; <img src="img/pg.png" width="23" height="23" class="imageball">&nbsp; 4-3-3.com </li> </a>
+        
+        <!-- Navigation Bar -->
+    <a href="index.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2"> FUTBOLL &nbsp;</h2></button>
+  		
+		</div>
+	</a>
+
+	 <a href="topligat.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">TOP LIGAT &nbsp;</h2></button>
+  		<div class="dropdown-content">
+  			<br>
+    		<a href="premierleague.html">Premier League</a>
+    		<a href="laliga.html">La Liga</a>
+    		<a href="seriea.html">Serie A</a>
+    		<a href="bundesliga.html">Bundesliga</a>
+    		<a href="ligue1.html">Ligue 1</a>
+    		<a href="championsleague.html">CHAMPIONS LEAGUE</a>
+    		<a href="europaleague.html">EUROPA LEAGUE</a>
+  		</div>
+		</div>
+	</a>
+
+	<a href="transferimet.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">TRANSFERIMET &nbsp;</h2></button>
+		</div>
+	</a>
+
+	<a href="nderkombetare.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">NDËRKOMBËTARE &nbsp;</h2></button>
+  		<div class="dropdown-content">
+  			<br>
+    		<a href="worldcup.html">World Cup</a>
+    		<a href="euros.html">Euro</a>
+    		<a href="uefanationsleague.html"> UEFA NATIONS LEAGUE</a>
+  		</div>
+		</div>
+	</a>
+
+	<a href="analiza.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">ANALIZA &nbsp;</h2></button>
+		</div>
+	</a>
+
+	<a href="galerite.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">GALERITË &nbsp;</h2></button>
+		</div>
+	</a>
+
+	<a href="video.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">VIDEO &nbsp;</h2></button>
+		</div>
+	</a>
+
+	<a href="perne.html">
+      	<div class="dropdown">
+  			<button class="dropbtn"><h2 class="categories2">PËR NE</h2></button>
+		</div>
+	</a>
+
+
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>	
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Perfundimi i Navigacionit --->
+<body>
+	<div id="login_form">
+
+		<br><br><br><br><br>
+				<center id="kyçu">Kyçuni</center>
+<fieldset>
+<div style="text-align:center;">
+<img src="img/avatar.png" class="avatar_img" alt="avatar image"/>
+</div>
+<form method="post" name="myForm" onsubmit="valido()">
+<label><b>Username: </b></label>
+<input type="text" name="username" placeholder="Shtypni username-n tuaj" title="Ju lutemi plotesoni kete fushe!" required />
+<label><b>Fjalëkalimi: </b></label>
+<input type="password" name="password" placeholder="Shtypni fjalëkalimin" title="Ju lutemi plotesoni kete fushe!" required />
+<br><br>
+<input type="submit" name="submit" value="Kyçu" class="sub"/><br><br>
+<input type="button" name="cancel" value="Kthehu" id="cancel_btn"/>
+<input type="reset" name="pastro" value="Pastro" id="pastro_btn" />
+</form>
+
+</fieldset>
+</div>
+<!-- Perfundimi i Hapësirës për tu Loguar -->
+<br>
+<h3 id="h3">Deshiron te behesh pjesë e familjes së 4-3-3?</h3>
+
+<hr><div class="kerkesat2">
+	<br>
+	<ul class="ul"> <p>Kerkesat Për t'u bërë pjesë e Familjes '4-3-3' [Front-End Developer, Gazetar]</p>
+		<li>- CV Personale</li>
+		<li>- Përvojë pune minimale 6-muajshe</li>
+		<li>- Aftësi të mira Programimi (Për Front-End Developers)</li>
+		<li>- Aftësi të mira gazetarie (Për Aplikantë në fushën e Gazetarisë)</li>
+	</ul>
+
+	<p class="kontakto1">Kontakto me ne Permes: </p> 
+	<a href="mailto:kontakti@433.com" id="email" class="kontakto1">E-Mail
+	</a>
+	<br><br><br><br><br>
+	<br>
+	</div>
+
+<br>
+	<!--- Footer -->
+	<hr>
+	<br>
+		
+		<div class="rightfooter">
+
+			<div class="rightfooterleft">
+				<br>
+			<center> 4-3-3, Të Parët për Lajmin e Fundit </center>
+			<br>
+			<img src="img/pg.png" width="90" height="90" class="imazhi">
+		
+		<nav class="navbar navbar-light bg-light">
+		  	<form class="form-inline">
+		  		
+		    	<input class="form-control" type="search" placeholder="Search" aria-label="Search"> 
+		    	<br>
+		    	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
+		   
+		 	</form>
+		</nav>
+		
+			</div>
+			
+			<div class="rightfooterright">
+				Per me shumë hollësi kontakto me ne përmes: 
+				<ul>
+
+				<a href="mailto:info@433.com"> <li> E-Mail </li></a> <br>
+				<a href="www.facebook.com/433/"> <li> Facebook </li></a> <br>
+				<a href="www.instagram.com/433/"> <li> Instagram </li></a> 
+
+				</ul>
+			</div>
+			<ul>
+
+		<a href="signin.html"><center class="SignIn"><li>Sign In</li></center></a>
+	</ul>
+		</div>
+
+
+	</div>
+	<!-- Perfundimi i Footer -->
+
+</body>
+</html>
